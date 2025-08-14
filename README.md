@@ -1,19 +1,21 @@
-# video-agent# 🎬 Video Agent (Azure)
+# 🎬 Video Agent — Azure AI Educational Project
 
-Agent تعليمي بسيط يفهرس فيديوهات عبر **Azure AI Video Indexer** ويولد **ملخّص/Highlights/FAQs** عبر **Azure OpenAI**.
+مشروع تعليمي يهدف إلى توضيح كيفية بناء Agent للتعامل مع الفيديوهات باستخدام خدمات **Microsoft Azure**.  
+يقوم المشروع بفهرسة الفيديوهات، استخراج النصوص والـ Insights، ثم تلخيصها باللغة العربية.
 
-## ✨ المزايا
-- رفع/فهرسة فيديوهات بالرابط (URL)
-- سحب Insights/Transcript
-- تلخيص عربي منسّق إلى Markdown
+---
+
+## ✨ المزايا الرئيسية
+- **فهرسة الفيديوهات** باستخدام [Azure AI Video Indexer](https://learn.microsoft.com/en-us/azure/azure-video-indexer/).
+- **تلخيص المحتوى** وإنتاج النقاط البارزة (Highlights) والأسئلة الشائعة (FAQs) باستخدام [Azure OpenAI](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/).
+- تصميم هيكلي احترافي مع دعم أوامر CLI.
+- **CI/CD** عبر GitHub Actions لاختبارات الكود وفحص الجودة.
+
+---
 
 ## 🧱 المتطلبات
 - Python 3.11+
-- حساب Azure وخدمات:
-  - Azure AI Video Indexer (Account ID, Location, API Key)
-  - Azure OpenAI (Endpoint, Key, Deployment)
-  - (اختياري) Azure Blob Storage (Connection String)
-- تفعيل GitHub Actions (اختياري)
-
-## ⚙️ الإعداد
-1) انسخ القيم إلى ملف `.env` (من `.env.example`):
+- حساب Azure يحتوي على:
+  - Azure AI Video Indexer
+  - Azure OpenAI
+  -Azure Blob Storage
